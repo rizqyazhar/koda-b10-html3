@@ -2,7 +2,7 @@
 
 Membuat form survey perokok tanpa menggunakan CSS atau attribute style
 
-![demo-survey-form](rec.gif)
+![demo-survey-form](demo.gif)
 
 ## Tabel Hasil Data Survey (statis)
 

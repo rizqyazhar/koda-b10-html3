@@ -5,5 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Perokok</title>
   </head>
-  <body></body>
+  <body>
+    <form action="index.html">
+      <div>
+        <div>
+          <label for="nama">Siapa nama anda?</label>
+        </div>
+        <div>
+          <input type="text" name="nama" id="nama" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="umur">Berapa umur anda?</label>
+        </div>
+        <div>
+          <input type="number" name="umur" id="umur" />
+        </div>
+      </div>
+      <div>
+        <span>Apa jenis kelamin anda?</span>
+        <div>
+          <input type="radio" name="gender" id="gender-man" />
+          <label for="gender-man">Laki-laki</label>
+          <input type="radio" name="gender" id="gender-woman" />
+          <label for="gender-woman">Perempuan</label>
+        </div>
+      </div>
+      <div>
+        <span>Apakah anda perokok?</span>
+        <div>
+          <input type="radio" name="yes-or-no" id="yes" />
+          <label for="yes">Ya</label>
+          <input type="radio" name="yes-or-no" id="no" />
+          <label for="no">Tidak</label>
+        </div>
+      </div>
+      <div>
+        <span>Jika anda perokok, rokok apa yang anda pernah coba?</span>
+        <div>
+          <input
+            type="checkbox"
+            name="gudang-garam-filter"
+            id="gudang-garam-filter" />
+          <label for="gudang-garam-filter">Gudang Garam Filter</label>
+        </div>
+        <div>
+          <input type="checkbox" name="lucky-strike" id="lucky-strike" />
+          <label for="lucky-strike">Lucky Strike</label>
+        </div>
+        <div>
+          <input type="checkbox" name="marlboro" id="marlboro" />
+          <label for="marlboro">Marlboro</label>
+        </div>
+        <div>
+          <input type="checkbox" name="esse" id="esse" />
+          <label for="esse">Esse</label>
+        </div>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
 </html>

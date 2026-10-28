@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Perokok</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
@@ -11,79 +12,110 @@
       <span>></span>
       <a href="table.html">Lihat Tabel</a>
     </nav>
-    <br />
-    <form action="table.html">
-      <div>
+    <main>
+      <header>
         <div>
-          <label for="nama">Siapa nama anda?</label>
+          <h1>Survey Rokok Favorit</h1>
+          <p>Terima kasih atas ketersediaan anda untuk mengisi survey</p>
         </div>
         <div>
-          <input type="text" name="nama" id="nama" />
-        </div>
-      </div>
-      <div>
-        <div>
-          <label for="umur">Berapa umur anda?</label>
-        </div>
-        <div>
-          <input type="number" name="umur" id="umur" />
-        </div>
-      </div>
-      <div>
-        <label for="gender-man">Apa jenis kelamin anda?</label>
-        <div>
-          <input type="radio" name="gender" id="gender-man" value="man" />
-          <label for="gender-man">Laki-laki</label>
-          <input type="radio" name="gender" id="gender-woman" value="woman" />
-          <label for="gender-woman">Perempuan</label>
-        </div>
-      </div>
-      <div>
-        <label for="no">Apakah anda perokok?</label>
-        <div>
-          <input type="radio" name="yes-or-no" id="yes" value="yes" />
-          <label for="yes">Ya</label>
-          <input type="radio" name="yes-or-no" id="no" value="no" />
-          <label for="no">Tidak</label>
-        </div>
-      </div>
-      <div>
-        <label for="esse"
-          >Jika anda perokok, rokok apa yang anda pernah coba?</label
-        >
-        <div>
-          <input
-            type="checkbox"
-            name="gudang-garam-filter"
-            id="gudang-garam-filter"
-            value="gudang garam filter" />
-          <label for="gudang-garam-filter">Gudang Garam Filter</label>
+          <div>
+            <p>johndoe@gmail.com</p>
+            <p>Switch Account</p>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-cloud-check preview-icon">
+            <path d="m17 15-5.5 5.5L9 18" />
+            <path
+              d="M5.516 16.07A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 3.501 7.327" />
+          </svg>
         </div>
         <div>
-          <input
-            type="checkbox"
-            name="lucky-strike"
-            id="lucky-strike"
-            value="lucky strike" />
-          <label for="lucky-strike">Lucky Strike</label>
+          <p>* Harus diisi!</p>
+        </div>
+      </header>
+      <form action="table.html">
+        <div>
+          <div>
+            <label for="nama">Siapa nama anda?</label>
+          </div>
+          <div>
+            <input type="text" name="nama" id="nama" />
+          </div>
         </div>
         <div>
-          <input
-            type="checkbox"
-            name="marlboro"
-            id="marlboro"
-            value="marlboro" />
-          <label for="marlboro">Marlboro</label>
+          <div>
+            <label for="umur">Berapa umur anda?</label>
+          </div>
+          <div>
+            <input type="number" name="umur" id="umur" />
+          </div>
         </div>
         <div>
-          <input type="checkbox" name="esse" id="esse" value="esse" />
-          <label for="esse">Esse</label>
+          <label for="gender-man">Apa jenis kelamin anda?</label>
+          <div>
+            <input type="radio" name="gender" id="gender-man" value="man" />
+            <label for="gender-man">Laki-laki</label>
+            <input type="radio" name="gender" id="gender-woman" value="woman" />
+            <label for="gender-woman">Perempuan</label>
+          </div>
         </div>
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-      </div>
-    </form>
+        <div>
+          <label for="no">Apakah anda perokok?</label>
+          <div>
+            <input type="radio" name="yes-or-no" id="yes" value="yes" />
+            <label for="yes">Ya</label>
+            <input type="radio" name="yes-or-no" id="no" value="no" />
+            <label for="no">Tidak</label>
+          </div>
+        </div>
+        <div>
+          <label for="esse"
+            >Jika anda perokok, rokok apa yang anda pernah coba?</label
+          >
+          <div>
+            <input
+              type="checkbox"
+              name="gudang-garam-filter"
+              id="gudang-garam-filter"
+              value="gudang garam filter" />
+            <label for="gudang-garam-filter">Gudang Garam Filter</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="lucky-strike"
+              id="lucky-strike"
+              value="lucky strike" />
+            <label for="lucky-strike">Lucky Strike</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="marlboro"
+              id="marlboro"
+              value="marlboro" />
+            <label for="marlboro">Marlboro</label>
+          </div>
+          <div>
+            <input type="checkbox" name="esse" id="esse" value="esse" />
+            <label for="esse">Esse</label>
+          </div>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
   </body>
 </html>

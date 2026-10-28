@@ -14,16 +14,23 @@ body {
 
 main {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-header {
+header,
+.input-nama-box {
   background-color: white;
-  border-top: 10px solid #673ab7;
   border-radius: 10px;
-  padding: 15px 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+header {
+  border-top: 10px solid #673ab7;
+  padding: 15px 30px;
 }
 
 header > div:nth-child(1) {
@@ -62,4 +69,26 @@ header div:nth-child(3) p {
 h1 {
   font-weight: 500;
   font-size: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-nama-box {
+  padding: 20px 30px;
+}
+
+.input-nama {
+  width: 50%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #f0ebf8;
+  padding: 5px 0;
+}
+
+span {
+  color: red;
 }

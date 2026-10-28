@@ -22,7 +22,8 @@ main {
 header,
 .input-nama-box,
 .input-umur-box,
-.input-gender-box {
+.input-gender-box,
+.input-perokok-box {
   background-color: white;
   border-radius: 10px;
   display: flex;
@@ -81,7 +82,8 @@ form {
 
 .input-nama-box,
 .input-umur-box,
-.input-gender-box {
+.input-gender-box,
+.input-perokok-box {
   padding: 20px 30px;
 }
 
@@ -98,12 +100,14 @@ span {
   color: red;
 }
 
-.input-gender-box > div {
+.input-gender-box > div,
+.input-perokok-box > div {
   display: flex;
   gap: 50px;
 }
 
-.input-gender-box > div div {
+.input-gender-box > div div,
+.input-perokok-box > div div {
   display: flex;
   gap: 10px;
 }

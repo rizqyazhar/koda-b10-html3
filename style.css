@@ -20,7 +20,8 @@ main {
 }
 
 header,
-.input-nama-box {
+.input-nama-box,
+.input-umur-box {
   background-color: white;
   border-radius: 10px;
   display: flex;
@@ -77,11 +78,13 @@ form {
   gap: 20px;
 }
 
-.input-nama-box {
+.input-nama-box,
+.input-umur-box {
   padding: 20px 30px;
 }
 
-.input-nama {
+.input-nama,
+.input-umur {
   width: 50%;
   outline: none;
   border: none;

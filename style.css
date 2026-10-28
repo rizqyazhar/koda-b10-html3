@@ -186,3 +186,51 @@ span {
 .button-box button:nth-child(2) {
   color: #673ab7;
 }
+
+.box-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+table thead th,
+table tbody td {
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+}
+
+table thead tr:nth-child(1) th {
+  background-color: #673ab7;
+}
+
+table thead tr:nth-child(2) th {
+  background-color: #673ab7;
+}
+
+table tbody td {
+  color: #000;
+}
+
+table tbody tr {
+  background-color: #fff;
+  color: #000;
+}
+
+table tbody tr {
+  border-top: 1px solid #f0ebf8;
+}
+
+table tbody tr:hover {
+  background-color: #f0ebf8;
+}

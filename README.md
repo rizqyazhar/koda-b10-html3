@@ -7,3 +7,11 @@ Membuat form survey perokok tanpa menggunakan CSS atau attribute style
 ## Tabel Hasil Data Survey (statis)
 
 ![tabel-survey](/ss-table.png)
+
+### Screeenshot form after refactor with flex
+
+![ss-form-after-refactor-with-flex](/ss-form-after-refactor-with-flex.png)
+
+### Screeenshot table after refactor with flex
+
+![ss-table-after-refactor-with-flex](/ss-table-after-refactor-with-flex.png)

@@ -52,19 +52,23 @@
               name="nama"
               id="nama"
               class="input-nama"
-              placeholder="Jawaban Anda" />
+              placeholder="Jawaban Anda"
+              required />
           </div>
           <div class="input-umur-box">
-            <label for="umur">Berapa umur anda?</label>
+            <label for="umur">Berapa umur anda? <span>*</span></label>
             <input
               type="number"
               name="umur"
               id="umur"
               class="input-umur"
-              placeholder="Jawaban Anda" />
+              placeholder="Jawaban Anda"
+              required />
           </div>
           <div class="input-gender-box">
-            <label for="gender-man">Apa jenis kelamin anda?</label>
+            <label for="gender-man"
+              >Apa jenis kelamin anda? <span>*</span></label
+            >
             <div>
               <div>
                 <input type="radio" name="gender" id="gender-man" value="man" />
@@ -75,20 +79,26 @@
                   type="radio"
                   name="gender"
                   id="gender-woman"
-                  value="woman" />
+                  value="woman"
+                  checked />
                 <label for="gender-woman">Perempuan</label>
               </div>
             </div>
           </div>
           <div class="input-perokok-box">
-            <label for="no">Apakah anda perokok?</label>
+            <label for="no">Apakah anda perokok? <span>*</span></label>
             <div>
               <div>
                 <input type="radio" name="yes-or-no" id="yes" value="yes" />
                 <label for="yes">Ya</label>
               </div>
               <div>
-                <input type="radio" name="yes-or-no" id="no" value="no" />
+                <input
+                  type="radio"
+                  name="yes-or-no"
+                  id="no"
+                  value="no"
+                  checked />
                 <label for="no">Tidak</label>
               </div>
             </div>

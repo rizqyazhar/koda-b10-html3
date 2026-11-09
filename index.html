@@ -44,7 +44,7 @@
             <p>* Harus diisi!</p>
           </div>
         </header>
-        <form action="table.html">
+        <form>
           <div class="input-nama-box">
             <label for="nama">Siapa nama anda? <span>*</span></label>
             <input
@@ -71,7 +71,12 @@
             >
             <div>
               <div>
-                <input type="radio" name="gender" id="gender-man" value="man" />
+                <input
+                  type="radio"
+                  name="gender"
+                  id="gender-man"
+                  value="man"
+                  required />
                 <label for="gender-man">Laki-laki</label>
               </div>
               <div>
@@ -79,8 +84,7 @@
                   type="radio"
                   name="gender"
                   id="gender-woman"
-                  value="woman"
-                  checked />
+                  value="woman" />
                 <label for="gender-woman">Perempuan</label>
               </div>
             </div>
@@ -89,11 +93,16 @@
             <label for="no">Apakah anda perokok? <span>*</span></label>
             <div>
               <div>
-                <input type="radio" name="smoking" id="yes" value="yes" />
+                <input
+                  type="radio"
+                  name="smoking"
+                  id="yes"
+                  value="yes"
+                  required />
                 <label for="yes">Ya</label>
               </div>
               <div>
-                <input type="radio" name="smoking" id="no" value="no" checked />
+                <input type="radio" name="smoking" id="no" value="no" />
                 <label for="no">Tidak</label>
               </div>
             </div>

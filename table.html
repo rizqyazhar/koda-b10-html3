@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table Survey</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="/index.js" defer></script>
   </head>
   <body>
     <nav>
@@ -16,17 +17,17 @@
       <table>
         <thead>
           <tr>
-            <th rowspan="2">Nama</th>
-            <th rowspan="2">Umur</th>
-            <th rowspan="2">Jenis Kelamin</th>
-            <th rowspan="2">Perokok</th>
-            <th colspan="4">Jenis Rokok</th>
+            <th scope="col" rowspan="2">Nama</th>
+            <th scope="col" rowspan="2">Umur</th>
+            <th scope="col" rowspan="2">Jenis Kelamin</th>
+            <th scope="col" rowspan="2">Perokok</th>
+            <th scope="col" colspan="4">Jenis Rokok</th>
           </tr>
           <tr>
-            <th>Gudang Garam Filter</th>
-            <th>Lucky Strike</th>
-            <th>Marlboro</th>
-            <th>Esse</th>
+            <th scope="col" rowspan="2">Gudang Garam Filter</th>
+            <th scope="col" rowspan="2">Lucky Strike</th>
+            <th scope="col">Marlboro</th>
+            <th scope="col">Esse</th>
           </tr>
         </thead>
         <tbody>
@@ -35,100 +36,10 @@
             <td>40</td>
             <td>Laki-laki</td>
             <td>Ya</td>
-            <td>&#10003;</td>
-            <td></td>
-            <td>&#10003;</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Josh</td>
-            <td>20</td>
-            <td>Laki-laki</td>
-            <td>Ya</td>
-            <td></td>
-            <td>&#10003;</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Angga</td>
-            <td>30</td>
-            <td>Laki-laki</td>
-            <td>Ya</td>
-            <td>&#10003;</td>
-            <td>&#10003;</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Yunita</td>
-            <td>25</td>
-            <td>Perempuan</td>
-            <td>Tidak</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Doe</td>
-            <td>30</td>
-            <td>Laki-laki</td>
-            <td>Tidak</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Angela</td>
-            <td>40</td>
-            <td>Perempuan</td>
-            <td>Ya</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>&#10003;</td>
-          </tr>
-          <tr>
-            <td>Jessica</td>
-            <td>29</td>
-            <td>Perempuan</td>
-            <td>Ya</td>
-            <td>&#10003;</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Robert</td>
-            <td>22</td>
-            <td>Laki-laki</td>
-            <td>Tidak</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Marie</td>
-            <td>27</td>
-            <td>Perempuan</td>
-            <td>Tidak</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Rapha</td>
-            <td>36</td>
-            <td>Laki-laki</td>
-            <td>Ya</td>
-            <td></td>
-            <td>&#10003;</td>
-            <td>&#10003;</td>
-            <td></td>
+            <td id="gudang-garam-filter">&#10003;</td>
+            <td id="lucky-strike"></td>
+            <td id="marlboro"></td>
+            <td id="esse"></td>
           </tr>
         </tbody>
       </table>

@@ -4,159 +4,201 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Perokok</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="/index.js" defer></script>
   </head>
-  <body>
-    <nav>
-      <a href="index.html" class="disabled active">Isi Form</a>
-      <span>></span>
-      <a href="table.html">Lihat Tabel</a>
+  <body
+    class="w-full min-h-dvh px-8 md:px-0 py-12 flex flex-col justify-center items-center gap-8 bg-violet-50">
+    <nav class="flex items-center gap-4">
+      <a class="bg-violet-600 text-white px-2 py-1 rounded-lg cursor-default text-sm md:text-base"
+        >Isi Form</a
+      >
+      <span class="font-bold">></span>
+      <a href="/table.html" class="text-sm md:text-base">Isi Form</a>
     </nav>
-    <div class="container">
-      <main>
-        <header>
-          <div>
-            <h1>Survey Rokok Favorit</h1>
-            <p>Terima kasih atas ketersediaan anda untuk mengisi survey</p>
+    <form class="w-fit flex flex-col gap-4">
+      <div class="bg-white border-t-8 border-violet-700 rounded-lg">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
+          <div class="flex flex-col gap-1">
+            <h1 class="text-slate-900 text-lg md:text-2xl font-medium">
+              Survey Rokok Favorit
+            </h1>
+            <p class="text-sm md:text-base text-slate-900/50">
+              Terima kasih atas ketersediaan anda untuk mengisi survey
+            </p>
           </div>
-          <div>
+          <div
+            class="border-y border-violet-50 py-4 flex justify-between items-center">
             <div>
-              <p>johndoe@gmail.com</p>
-              <p>Switch Account</p>
+              <span class="text-slate-900/50 text-xs md:text-sm"
+                >johndoe@gmail.com</span
+              >
+              <button class="text-slate-900/50 text-xs md:text-sm">
+                Switch Account
+              </button>
             </div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-cloud-check preview-icon">
-              <path d="m17 15-5.5 5.5L9 18" />
-              <path
-                d="M5.516 16.07A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 3.501 7.327" />
-            </svg>
+            <button>
+              <svg
+                class="size-4 md:size-6 text-slate-700"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-cloud-check preview-icon">
+                <path d="m17 15-5.5 5.5L9 18" />
+                <path
+                  d="M5.516 16.07A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 3.501 7.327" />
+              </svg>
+            </button>
           </div>
-          <div>
-            <p>* Harus diisi!</p>
-          </div>
-        </header>
-        <form>
-          <div class="input-nama-box">
-            <label for="nama">Siapa nama anda? <span>*</span></label>
-            <input
-              type="text"
-              name="nama"
-              id="nama"
-              class="input-nama"
-              placeholder="Jawaban Anda"
-              required />
-          </div>
-          <div class="input-umur-box">
-            <label for="umur">Berapa umur anda? <span>*</span></label>
-            <input
-              type="number"
-              name="umur"
-              id="umur"
-              class="input-umur"
-              placeholder="Jawaban Anda"
-              required />
-          </div>
-          <div class="input-gender-box">
-            <label for="gender-man"
-              >Apa jenis kelamin anda? <span>*</span></label
-            >
-            <div>
-              <div>
-                <input
-                  type="radio"
-                  name="gender"
-                  id="gender-man"
-                  value="man"
-                  required />
-                <label for="gender-man">Laki-laki</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  name="gender"
-                  id="gender-woman"
-                  value="woman" />
-                <label for="gender-woman">Perempuan</label>
-              </div>
+          <span class="text-red-500 font-medium text-xs md:text-sm"
+            >* Harus diisi!</span
+          >
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
+          <label class="font-medium text-sm md:text-base for="nama"
+            >Siapa nama anda?<span class="text-red-500">*</span></label
+          >
+          <input
+            class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+            type="text"
+            name="nama"
+            id="nama"
+            placeholder="Jawaban Anda" />
+        </div>
+      </div>
+      <div class="bg-white rounded-lg">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
+          <label class="font-medium text-sm md:text-base for="umur"
+            >Berapa umur anda?<span class="text-red-500">*</span></label
+          >
+          <input
+            class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+            type="text"
+            name="umur"
+            id="umur"
+            placeholder="Jawaban Anda" />
+        </div>
+      </div>
+      <div class="bg-white rounded-lg">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
+          <p class="font-medium text-sm md:text-base">
+            Apa jenis kelamin anda?<span class="text-red-500">*</span>
+          </p>
+          <div class="flex gap-8 items-center">
+            <div class="flex items-center gap-2">
+              <input
+                class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+                type="radio"
+                name="gender"
+                id="male"
+                value="laki-laki" />
+              <label for="male" class="text-sm md:text-base">Laki-laki</label>
             </div>
-          </div>
-          <div class="input-perokok-box">
-            <label for="no">Apakah anda perokok? <span>*</span></label>
-            <div>
-              <div>
-                <input
-                  type="radio"
-                  name="smoking"
-                  id="yes"
-                  value="yes"
-                  required />
-                <label for="yes">Ya</label>
-              </div>
-              <div>
-                <input type="radio" name="smoking" id="no" value="no" />
-                <label for="no">Tidak</label>
-              </div>
-            </div>
-          </div>
-          <div class="input-jenisRokok-box">
-            <label for="esse"
-              >Jika anda perokok, rokok apa yang anda pernah coba?</label
-            >
-            <div>
-              <div>
-                <input
-                  type="checkbox"
-                  name="cigarettes"
-                  id="gudang-garam-filter"
-                  value="gudang-garam-filter"
-                  class="jenisrokok-input" />
-                <label for="gudang-garam-filter">Gudang Garam Filter</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  name="cigarettes"
-                  id="lucky-strike"
-                  value="lucky-strike"
-                  class="jenisrokok-input" />
-                <label for="lucky-strike">Lucky Strike</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  name="cigarettes"
-                  id="marlboro"
-                  value="marlboro"
-                  class="jenisrokok-input" />
-                <label for="marlboro">Marlboro</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  name="cigarettes"
-                  id="esse"
-                  value="esse"
-                  class="jenisrokok-input" />
-                <label for="esse">Esse</label>
-              </div>
+            <div class="flex items-center gap-2">
+              <input
+                class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+                type="radio"
+                name="gender"
+                id="female"
+                value="perempuan" />
+              <label for="female" class="text-sm md:text-base">Perempuan</label>
             </div>
           </div>
-          <div class="button-box">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
+          <p class="font-medium text-sm md:text-base">
+            Apakah anda perokok?<span class="text-red-500">*</span>
+          </p>
+          <div class="flex gap-8 items-center">
+            <div class="flex items-center gap-2">
+              <input
+                class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+                type="radio"
+                name="smoking"
+                id="ya"
+                value="ya" />
+              <label for="ya" class="text-sm md:text-base">Ya</label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+                type="radio"
+                name="smoking"
+                id="tidak"
+                value="tidak" />
+              <label for="tidak" class="text-sm md:text-base">Tidak</label>
+            </div>
           </div>
-        </form>
-      </main>
-    </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
+          <p class="font-medium text-sm md:text-base">
+            Jika anda perokok, rokok apa yang anda pernah coba?
+          </p>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <input
+                class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+                type="checkbox"
+                name="cigarettes"
+                id="ggm"
+                value="ggm" />
+              <label for="ggm" class="text-sm md:text-base">Gudang Garam Filter</label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+                type="checkbox"
+                name="cigarettes"
+                id="ls"
+                value="ls" />
+              <label for="ls" class="text-sm md:text-base">Lucky Strike</label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+                type="checkbox"
+                name="cigarettes"
+                id="mb"
+                value="mb" />
+              <label for="mb" class="text-sm md:text-base">Marlboro</label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                class="outline-none border-b border-violet-50 py-2 text-sm md:text-base"
+                type="checkbox"
+                name="cigarettes"
+                id="es"
+                value="es" />
+              <label for="es" class="text-sm md:text-base">Esse</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-between items-center">
+        <button
+          class="px-2.5 md:px-5 py-1 md:py-1.5 text-sm md:text-base rounded-lg bg-violet-700 text-white hover:opacity-70"
+          type="submit">
+          Submit
+        </button>
+        <button
+          class="px-2.5 md:px-5 py-1 md:py-1.5 text-sm md:text-base text-violet-700 hover:underline"
+          type="reset">
+          Reset
+        </button>
+      </div>
+    </form>
   </body>
 </html>

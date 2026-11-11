@@ -4,42 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table Survey</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="/index.js" defer></script>
   </head>
-  <body>
-    <nav>
-      <a href="table.html" class="disabled active">Lihat Tabel</a>
-      <span>></span>
-      <a href="index.html" class="">Isi Form</a>
+  <body
+    class="w-full min-h-dvh px-8 md:px-0 py-12 flex flex-col items-center gap-8 bg-violet-50">
+    <nav class="flex items-center gap-4">
+      <a
+        class="bg-violet-600 text-white px-2 py-1 rounded-lg cursor-default text-sm md:text-base"
+        >Lihat Tabel</a
+      >
+      <span class="font-bold">></span>
+      <a href="/index.html" class="text-sm md:text-base">Isi Form</a>
     </nav>
-    <div class="box-table">
-      <table>
-        <thead>
+    <div class="w-full md:w-11/12 lg:w-3/4 overflow-x-auto rounded-xl shadow">
+      <table class="w-full table-auto border-collapse">
+        <thead class="bg-violet-700 text-white">
           <tr>
-            <th scope="col" rowspan="2">Nama</th>
-            <th scope="col" rowspan="2">Umur</th>
-            <th scope="col" rowspan="2">Jenis Kelamin</th>
-            <th scope="col" rowspan="2">Perokok</th>
+            <th
+              class="text-nowrap p-2 border-b-2 border-violet-200"
+              scope="col"
+              rowspan="2">
+              Nama
+            </th>
+            <th
+              class="text-nowrap p-2 border-b-2 border-violet-200"
+              scope="col"
+              rowspan="2">
+              Umur
+            </th>
+            <th
+              class="text-nowrap p-2 border-b-2 border-violet-200"
+              scope="col"
+              rowspan="2">
+              Jenis Kelamin
+            </th>
+            <th
+              class="text-nowrap p-2 border-b-2 border-violet-200"
+              scope="col"
+              rowspan="2">
+              Perokok
+            </th>
             <th scope="col" colspan="4">Jenis Rokok</th>
           </tr>
           <tr>
-            <th scope="col" rowspan="2">Gudang Garam Filter</th>
-            <th scope="col" rowspan="2">Lucky Strike</th>
-            <th scope="col">Marlboro</th>
-            <th scope="col">Esse</th>
+            <th
+              class="text-nowrap p-2 border-b-2 border-violet-200"
+              scope="col"
+              rowspan="2">
+              Gudang Garam Filter
+            </th>
+            <th
+              class="text-nowrap p-2 border-b-2 border-violet-200"
+              scope="col"
+              rowspan="2">
+              Lucky Strike
+            </th>
+            <th
+              class="text-nowrap p-2 border-b-2 border-violet-200"
+              scope="col">
+              Marlboro
+            </th>
+            <th
+              class="text-nowrap p-2 border-b-2 border-violet-200"
+              scope="col">
+              Esse
+            </th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>40</td>
-            <td>Laki-laki</td>
-            <td>Ya</td>
-            <td id="gudang-garam-filter">&#10003;</td>
-            <td id="lucky-strike"></td>
-            <td id="marlboro"></td>
-            <td id="esse"></td>
+        <tbody class="bg-white">
+          <tr class="hover:bg-violet-100 text-center">
+            <td class="p-2">John</td>
+            <td class="p-2">40</td>
+            <td class="p-2">Laki-laki</td>
+            <td class="p-2">Ya</td>
+            <td class="p-2">&#10003;</td>
+            <td class="p-2"></td>
+            <td class="p-2"></td>
+            <td class="p-2"></td>
           </tr>
         </tbody>
       </table>

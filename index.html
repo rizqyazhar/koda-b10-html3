@@ -72,7 +72,7 @@
             type="text"
             name="nama"
             id="nama"
-            placeholder="Jawaban Anda" />
+            placeholder="Jawaban Anda" required />
         </div>
       </div>
       <div class="bg-white shadow-sm rounded-lg">
@@ -85,7 +85,7 @@
             type="text"
             name="umur"
             id="umur"
-            placeholder="Jawaban Anda" />
+            placeholder="Jawaban Anda" min="17" max="70" required />
         </div>
       </div>
       <div class="bg-white shadow-sm rounded-lg">
@@ -100,7 +100,7 @@
                 type="radio"
                 name="gender"
                 id="male"
-                value="male" />
+                value="male" required />
               <label for="male" class="text-sm md:text-base">Laki-laki</label>
             </div>
             <div class="flex items-center gap-2">
@@ -109,7 +109,7 @@
                 type="radio"
                 name="gender"
                 id="female"
-                value="female" />
+                value="female" required />
               <label for="female" class="text-sm md:text-base">Perempuan</label>
             </div>
           </div>
@@ -127,7 +127,7 @@
                 type="radio"
                 name="smoking"
                 id="ya"
-                value="ya" />
+                value="ya" required />
               <label for="ya" class="text-sm md:text-base">Ya</label>
             </div>
             <div class="flex items-center gap-2">

@@ -8,15 +8,16 @@ function newTd() {
 
 function renderRow(data) {
   const tBody = document.querySelector("table tbody");
-  const tr = document.createElement("tr");
 
   if (!tBody) return;
 
-  tBody.appendChild(tr);
-
   data.forEach((element) => {
-    const { nama, umur, gender, smoking, cigarettes } = element;
+    const tr = document.createElement("tr");
+    tr.setAttribute("class", "hover:bg-violet-100 text-center");
+    tBody.appendChild(tr);
+    const { nama, umur, gender, smoking, cigarettesCompared } = element;
     const colNama = newTd();
+    colNama.setAttribute("class", "p-2");
     colNama.textContent = nama;
     tr.appendChild(colNama);
 
@@ -25,7 +26,7 @@ function renderRow(data) {
     tr.appendChild(colUmur);
 
     const colGender = newTd();
-    if (gender === "man") {
+    if (gender === "male") {
       colGender.textContent = "Laki-laki";
     } else {
       colGender.textContent = "Perempuan";
@@ -40,11 +41,15 @@ function renderRow(data) {
     }
     tr.appendChild(colSmoking);
 
-    // cigarettes.forEach((c) => {
-    //   const td = newTd();
-    //   td.textContent = "\u2713";
-    //   tr.appendChild(td);
-    // });
+    cigarettesCompared.forEach((c) => {
+      const td = newTd();
+      if (c) {
+        td.textContent = "\u2713";
+      } else {
+        td.textContent = "";
+      }
+      tr.appendChild(td);
+    });
   });
 }
 
@@ -56,12 +61,7 @@ if (form) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const cigarettesValue = [
-      "gudang-garam-filter",
-      "lucky-strike",
-      "marlboro",
-      "esse",
-    ];
+    const cigarettesValue = ["ggm", "ls", "mb", "es"];
 
     const formData = new FormData(form);
 
@@ -69,13 +69,20 @@ if (form) {
     const umur = formData.get("umur");
     const gender = formData.get("gender");
     const smoking = formData.get("smoking");
-    // const cigarettes = formData.getAll("cigarettes");
+    const cigarettes = formData.getAll("cigarettes");
 
-    console.log(formData.getAll("cigarettes[cigarettesValue]"));
+    const cigarettesCompared = cigarettesValue.map((c) =>
+      cigarettes.includes(c),
+    );
 
-    const temp = [{ nama, umur, gender, smoking, cigarettes }];
-    window.localStorage.setItem("table-data", JSON.stringify(temp));
+    const temp = { nama, umur, gender, smoking, cigarettesCompared };
+
+    datas.push(temp);
+
+    window.localStorage.setItem("table-data", JSON.stringify(datas));
+
     renderRow(datas);
+
     form.reset();
   });
 }

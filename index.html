@@ -10,7 +10,8 @@
   <body
     class="w-full min-h-dvh px-8 md:px-0 py-12 flex flex-col justify-center items-center gap-8 bg-violet-50">
     <nav class="flex items-center gap-4">
-      <a class="bg-violet-600 text-white px-2 py-1 rounded-lg cursor-default text-sm md:text-base"
+      <a
+        class="bg-violet-600 text-white px-2 py-1 rounded-lg cursor-default text-sm md:text-base"
         >Isi Form</a
       >
       <span class="font-bold">></span>
@@ -18,7 +19,7 @@
     </nav>
     <form class="w-fit flex flex-col gap-4">
       <div class="bg-white shadow-sm border-t-8 border-violet-700 rounded-lg">
-        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 py-4">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
           <div class="flex flex-col gap-1">
             <h1 class="text-slate-900 text-lg md:text-2xl font-medium">
               Survey Rokok Favorit
@@ -48,8 +49,7 @@
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-cloud-check preview-icon">
+                stroke-linejoin="round">
                 <path d="m17 15-5.5 5.5L9 18" />
                 <path
                   d="M5.516 16.07A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 3.501 7.327" />
@@ -63,8 +63,8 @@
       </div>
 
       <div class="bg-white shadow-sm rounded-lg">
-        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 py-4">
-          <label class="font-medium text-sm md:text-base for="nama"
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
+          <label class="font-medium text-sm md:text-base" for="nama"
             >Siapa nama anda?<span class="text-red-500">*</span></label
           >
           <input
@@ -72,12 +72,13 @@
             type="text"
             name="nama"
             id="nama"
-            placeholder="Jawaban Anda" required />
+            placeholder="Jawaban Anda"
+            required />
         </div>
       </div>
       <div class="bg-white shadow-sm rounded-lg">
-        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 py-4">
-          <label class="font-medium text-sm md:text-base for="umur"
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
+          <label class="font-medium text-sm md:text-base" for="umur"
             >Berapa umur anda?<span class="text-red-500">*</span></label
           >
           <input
@@ -85,11 +86,14 @@
             type="text"
             name="umur"
             id="umur"
-            placeholder="Jawaban Anda" min="17" max="70" required />
+            placeholder="Jawaban Anda"
+            min="17"
+            max="70"
+            required />
         </div>
       </div>
       <div class="bg-white shadow-sm rounded-lg">
-        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 py-4">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
           <p class="font-medium text-sm md:text-base">
             Apa jenis kelamin anda?<span class="text-red-500">*</span>
           </p>
@@ -100,7 +104,8 @@
                 type="radio"
                 name="gender"
                 id="male"
-                value="male" required />
+                value="male"
+                required />
               <label for="male" class="text-sm md:text-base">Laki-laki</label>
             </div>
             <div class="flex items-center gap-2">
@@ -109,14 +114,15 @@
                 type="radio"
                 name="gender"
                 id="female"
-                value="female" required />
+                value="female"
+                required />
               <label for="female" class="text-sm md:text-base">Perempuan</label>
             </div>
           </div>
         </div>
       </div>
       <div class="bg-white shadow-sm rounded-lg">
-        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 py-4">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
           <p class="font-medium text-sm md:text-base">
             Apakah anda perokok?<span class="text-red-500">*</span>
           </p>
@@ -127,7 +133,8 @@
                 type="radio"
                 name="smoking"
                 id="ya"
-                value="ya" required />
+                value="ya"
+                required />
               <label for="ya" class="text-sm md:text-base">Ya</label>
             </div>
             <div class="flex items-center gap-2">
@@ -143,7 +150,7 @@
         </div>
       </div>
       <div class="bg-white shadow-sm rounded-lg">
-        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 py-4">
+        <div class="flex flex-col gap-4 px-4 md:px-8 py-2 md:py-4">
           <p class="font-medium text-sm md:text-base">
             Jika anda perokok, rokok apa yang anda pernah coba?
           </p>
@@ -155,7 +162,9 @@
                 name="cigarettes"
                 id="ggm"
                 value="ggm" />
-              <label for="ggm" class="text-sm md:text-base">Gudang Garam Filter</label>
+              <label for="ggm" class="text-sm md:text-base"
+                >Gudang Garam Filter</label
+              >
             </div>
             <div class="flex items-center gap-2">
               <input
